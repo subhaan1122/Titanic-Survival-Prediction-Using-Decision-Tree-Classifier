@@ -1,34 +1,40 @@
-This project predicts the survival of passengers on the Titanic based on their attributes such as gender, age, and class using a Decision Tree Classifier. It demonstrates basic data preprocessing, feature engineering, and classification techniques.
+🚢 Titanic Survival Prediction using Decision Tree:
 
--> Features: 
+This project builds a machine learning model to predict whether a passenger survived the Titanic disaster using a Decision Tree Classifier. We preprocess the dataset by selecting relevant features, handling missing values, encoding categorical data, and then training the model.
 
-1. Data Preprocessing:
-- Cleans the dataset by handling missing values and encoding categorical variables.
-- Drops unnecessary columns like Name, Cabin, and Ticket.
-  
-2. Decision Tree Classifier:
-- Trains a machine learning model to classify passengers as survived or not survived.
-  
-3. Model Evaluation:
-- Evaluates the classifier's performance using the accuracy score
+📌 Project Overview:
 
--> Technologies Used:
-- Python: Programming language.
-- Pandas: Data preprocessing and manipulation.
-- Scikit-learn: Machine learning library.
+We:
+- Load and explore the Titanic dataset
+- Clean and preprocess the data
+- Convert categorical variables into numeric
+- Handle missing values
+- Train a Decision Tree model
+- Evaluate model accuracy
 
--> How It Works:
+🧾 Features Used:
 
-1. Data Loading:
-- Reads the Titanic dataset in CSV format.
-- Data Preprocessing:
+Feature	: Description
+Pclass:	Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd)
+Sex	Gender:  (encoded: male = 1, female = 2)
+Age:	Age in years
+Survived: 	Target (0 = No, 1 = Yes)
 
-2. Drops irrelevant columns.
-- Encodes categorical data (e.g., mapping gender to numeric values).
-- Fills missing values in the Age column with the mean age.
-  
-3. Model Training:
--Fits a Decision Tree Classifier on the processed data.
+🧠 Model Used:
 
-4. Prediction and Evaluation:
-- Predicts survival outcomes and evaluates the model's accuracy.
+Decision Tree Classifier from scikit-learn: A simple, interpretable model that splits data based on feature values.
+
+🧪 Model Evaluation:
+
+- Training samples: 712
+- Testing samples: 179
+- Accuracy (on test set): ~77% (may vary slightly)
+
+✅ Learnings:
+
+- How to clean real-world data (drop columns, handle missing values)
+- Categorical encoding (Sex)
+- Training a simple decision tree model
+- Measuring model accuracy
+
+⭐ If you found this helpful, leave a star on the repo!
